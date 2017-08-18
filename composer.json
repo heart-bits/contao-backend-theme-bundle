@@ -1,0 +1,24 @@
+{
+    "name":"heart-bits/contao-article-backgrounds",
+    "description":"heart-bits Backend Theme",
+    "keywords":["contao", "backend", "theme"],
+    "type":"contao-module",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"heart-bits",
+            "homepage":"https://www.heart-bits.com"
+        }
+    ],
+    "require":{
+        "php":"^5.6",
+        "contao/core-bundle": "^4.4"
+    },
+    "extra":{
+        "contao": {
+            "sources":{
+                "": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
+            }
+        }
+    }
+}
