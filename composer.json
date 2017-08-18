@@ -1,5 +1,5 @@
 {
-    "name":"heart-bits/contao-article-backgrounds",
+    "name":"heart-bits/hb-backend-theme",
     "description":"heart-bits Backend Theme",
     "keywords":["contao", "backend", "theme"],
     "type":"contao-module",
