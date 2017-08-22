@@ -24,10 +24,10 @@
   "extra": {
     "contao": {
       "userfiles": {
-        "files/theme": "files/theme"
+        "files/theme": "theme"
       },
       "sources": {
-        "": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
+        "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
       }
     }
   }
