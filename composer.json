@@ -28,7 +28,8 @@
       },
       "sources": {
         "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits",
-        "templates/be_login.html5": "templates/be_login.html5"
+        "templates/be_login.html5": "templates/be_login.html5",
+        "templates/be_main.html5": "templates/be_main.html5"
       }
     }
   }
