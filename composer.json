@@ -25,6 +25,9 @@
     "contao": {
       "userfiles": {
         "files/theme": "files/theme"
+      },
+      "sources": {
+        "": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
       }
     }
   }
