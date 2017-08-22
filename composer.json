@@ -10,6 +10,11 @@
       "homepage":"https://www.heart-bits.com"
     }
   ],
+  "support":{
+  	"email": "hi@heart-bits.com",
+		"issues":"https://github.com/heart-bits/hb-backend-theme/issues",
+		"source":"https://github.com/heart-bits/hb-backend-theme"
+	},
   "require":{
     "php":">=5.6",
     "contao/core-bundle": ">=4.4",
