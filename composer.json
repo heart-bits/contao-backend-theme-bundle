@@ -24,7 +24,7 @@
   "extra": {
     "contao": {
       "userfiles": {
-        "files/theme": "theme"
+        "files/theme/heart-bits": "theme/heart-bits"
       },
       "sources": {
         "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
