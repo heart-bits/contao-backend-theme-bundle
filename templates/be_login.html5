@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="<?= $this->language ?>">
+<head>
+
+  <meta charset="<?= $this->charset ?>">
+  <title><?= $this->title ?> - Contao Open Source CMS</title>
+  <base href="<?= $this->base ?>">
+  <meta name="generator" content="Contao Open Source CMS">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <meta name="referrer" content="origin">
+  <meta name="robots" content="noindex,follow">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,800">
+  <link rel="stylesheet" href="files/theme/heart-bits/login-min.css">
+  <?= $this->stylesheets ?>
+
+  <script><?= $this->getLocaleString() ?></script>
+  <script src="<?= TL_ASSETS_URL ?>assets/mootools/js/mootools.min.js"></script>
+  <script src="<?= TL_ASSETS_URL ?>bundles/contaocore/mootao.min.js"></script>
+  <script src="<?= TL_ASSETS_URL ?>bundles/contaocore/core.min.js"></script>
+  <script><?= $this->getDateString() ?></script>
+  <?= $this->javascripts ?>
+
+</head>
+<body class="<?= $this->ua ?>">
+  <div id="header">
+  <div class="logo-wrapper">
+    <a href="https://www.heart-bits.com" title="Besuchen Sie die Webseite von heart-bits">
+      <svg width="100%" height="100%" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M43.832,35.615l14.031,-14.031l-14.031,-14.031l-14.031,14.031l14.031,14.031Z" class="st2"></path><path d="M29,50.447l14.03,-14.031l-14.03,-14.031l-14.031,14.031l14.031,14.031Z" class="st0"></path><path d="M14.168,35.615l14.031,-14.03l-14.031,-14.031l-14.031,14.031l14.031,14.03Z" class="st1"></path></svg>
+    </a>
+  </div>
+  </div>
+  
+  <div id="container" class="cf">
+    <div id="main">
+      <form action="<?= $this->action ?>" class="tl_login_form" method="post">
+        <div class="formbody">
+          <input type="hidden" name="FORM_SUBMIT" value="tl_login">
+          <input type="hidden" name="REQUEST_TOKEN" value="<?= REQUEST_TOKEN ?>">
+          <h1><?= $this->headline ?></h1>
+          <div class="widget widget-text">
+            <label for="username"><?= $this->username ?></label>
+            <input type="text" name="username" id="username" class="text" value="<?= $this->curUsername ?>" autocapitalize="off" placeholder="<?= $this->username ?>" required>
+          </div>
+          <div class="widget widget-text">
+            <label for="password"><?= $this->password ?></label>
+            <input type="password" name="password" id="password" class="text" value="" placeholder="<?= $this->password ?>" required>
+          </div>
+          <div class="submit_container cf">
+            <button type="submit" name="login" id="login" class="submit"><?= $this->loginButton ?></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <?= $this->messages ?>
+    <div class="ce_hyperlink double"><a href="<?= $this->route('contao_root') ?>" class="footer_preview"><?= $this->feLink ?><span class="btn-arrow">›</span></a></div>
+  </div>
+
+  <div class="tl_info" id="javascript">
+    <?= $this->jsDisabled ?>
+  </div>
+
+  <script>
+    window.addEvent('domready', function() {
+      if (parent.frames[0] && parent.frames[0].name == 'switch') {
+        parent.location.reload();
+      }
+      $('username').focus();
+    });
+  </script>
+
+</body>
+</html>

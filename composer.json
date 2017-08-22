@@ -17,7 +17,7 @@
     "extra":{
         "contao": {
             "sources":{
-                "": "vendor/contao/core-bundle/src/Resources/contao/themes/heart-bits"
+                "": ""
             }
         }
     }
