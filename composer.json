@@ -24,8 +24,7 @@
   "extra": {
     "contao": {
       "sources": {
-        "files/theme": "files/theme",
-        "templates": "templates"
+        "files/theme": "files/theme"
       }
     }
   }
