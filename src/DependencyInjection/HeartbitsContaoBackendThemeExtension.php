@@ -33,6 +33,5 @@ class HeartbitsContaoBackendThemeExtension extends Extension
         );
 
         $loader->load('services.yml');
-        $loader->load('routing.yml');
     }
 }
