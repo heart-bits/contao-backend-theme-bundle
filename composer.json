@@ -1,7 +1,7 @@
 {
-  "name":"heart-bits/hb-backend-theme",
+  "name":"heart-bits/hb-backend-theme-bundle",
   "description":"heart-bits Backend Theme",
-  "keywords":["contao", "backend", "theme"],
+  "keywords":["contao", "bundle", "backend", "theme"],
   "type":"contao-bundle",
   "license":"LGPL-3.0+",
   "authors":[
