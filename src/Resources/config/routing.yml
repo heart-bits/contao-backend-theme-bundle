@@ -1,0 +1,8 @@
+# Redirect /heart-bits/ to /contao
+contao_backend_redirect:
+    path: /heart-bits/
+    defaults:
+        _scope: backend
+        _controller: "FrameworkBundle:Redirect:redirect"
+        route: contao_backend
+        permanent: true
