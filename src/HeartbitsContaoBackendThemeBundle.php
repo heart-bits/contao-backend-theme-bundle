@@ -15,7 +15,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * Bundle class.
  *
- * @package Netzmacht\Contao\BackendTheme
+ * @package Heartbits\Contao\BackendTheme
  */
 class HeartbitsContaoBackendThemeBundle extends Bundle
 {
