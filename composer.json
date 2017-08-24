@@ -29,11 +29,5 @@
   },
   "extra": {
     "contao-manager-plugin": "Heartbits\\Contao\\BackendTheme\\ContaoManager\\Plugin",
-    "contao": {
-      "sources": {
-        "templates/be_login.html5": "templates/be_login.html5",
-        "templates/be_main.html5": "templates/be_main.html5"
-      }
-    }
   }
 }
