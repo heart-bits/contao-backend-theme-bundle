@@ -28,6 +28,6 @@
     "psr-4": { "Heartbits\\Contao\\BackendTheme\\": "src/" }
   },
   "extra": {
-    "contao-manager-plugin": "Heartbits\\Contao\\BackendTheme\\ContaoManager\\Plugin",
+    "contao-manager-plugin": "Heartbits\\Contao\\BackendTheme\\ContaoManager\\Plugin"
   }
 }
