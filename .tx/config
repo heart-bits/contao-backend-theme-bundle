@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+type = XLIFF
+
+[hb-backend-theme-bundle.modules]
+file_filter = src/Resources/contao/languages/<lang>/modules.xlf
+source_file = src/Resources/contao/languages/en/modules.xlf
+source_lang = en

@@ -8,7 +8,7 @@
  *
  */
 
-namespace Heartbits\Contao\BackendTheme\Listener;
+namespace Heartbits\ContaoBackendTheme\Listener;
 
 use Contao\Config;
 use Contao\CoreBundle\Framework\ContaoFrameworkInterface as ContaoFramework;
@@ -16,7 +16,7 @@ use Contao\CoreBundle\Framework\ContaoFrameworkInterface as ContaoFramework;
 /**
  * Hook listener.
  *
- * @package Heartbits\Contao\BackendTheme\Listener
+ * @package Heartbits\ContaoBackendTheme\Listener
  */
 class HookListener
 {

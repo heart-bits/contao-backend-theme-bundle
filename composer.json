@@ -25,9 +25,13 @@
     "contao/manager-bundle": "~4.4"
   },
   "autoload": {
-    "psr-4": { "Heartbits\\Contao\\BackendTheme\\": "src/" }
+    "psr-4": { "Heartbits\\ContaoBackendTheme\\": "src/" }
   },
   "extra": {
+<<<<<<< HEAD
     "contao-manager-plugin": "Heartbits\\Contao\\BackendTheme\\ContaoManager\\Plugin"
+=======
+    "contao-manager-plugin": "Heartbits\\ContaoBackendTheme\\ContaoManager\\Plugin"
+>>>>>>> Add new backend functions
   }
 }

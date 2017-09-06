@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="plaintext" original="src/Resources/contao/languages/en/modules.xlf" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MOD.heartbits">
+        <source>heart-bits</source>
+        <target>heart-bits</target>
+      </trans-unit>
+      <trans-unit id="MOD.handbook">
+        <source>Video handbook</source>
+        <target>Video-Handbuch</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

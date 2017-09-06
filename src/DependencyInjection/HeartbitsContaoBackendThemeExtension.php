@@ -8,7 +8,7 @@
  *
  */
 
-namespace Heartbits\Contao\BackendTheme\DependencyInjection;
+namespace Heartbits\ContaoBackendTheme\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -18,7 +18,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * Dependency container extension.
  *
- * @package Heartbits\Contao\BackendTheme\DependencyInjection
+ * @package Heartbits\ContaoBackendTheme\DependencyInjection
  */
 class HeartbitsContaoBackendThemeExtension extends Extension
 {

@@ -8,13 +8,13 @@
  *
  */
 
-namespace Heartbits\Contao\BackendTheme\ContaoManager;
+namespace Heartbits\ContaoBackendTheme\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Heartbits\Contao\BackendTheme\HeartbitsContaoBackendThemeBundle;
+use Heartbits\ContaoBackendTheme\HeartbitsContaoBackendThemeBundle;
 
 /**
  * Class Plugin.
