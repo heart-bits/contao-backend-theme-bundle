@@ -1,5 +1,0 @@
-services:
-  heartbits.contao_backend_theme.hook_listener:
-    class: Heartbits\Contao\BackendTheme\Listener\HookListener
-    arguments:
-      - "@contao.framework"

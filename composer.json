@@ -18,16 +18,27 @@
 	},
   "require":{
     "php":">=7.1.0",
-    "contao/core-bundle": "~4.8",
-    "contao-community-alliance/composer-plugin": "~3.0"
+    "contao/core-bundle": "~4.8"
   },
   "require-dev": {
-    "contao/manager-bundle": "~4.8"
+    "contao/manager-plugin": "^2.0"
   },
   "autoload": {
-    "psr-4": { "Heartbits\\ContaoBackendTheme\\": "src/" }
+    "psr-4": {
+      "Heartbits\\ContaoBackendTheme\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/",
+      "src/Resources/contao/themes/"
+    ]
   },
   "extra": {
-    "contao-manager-plugin": "Heartbits\\Contao\\BackendTheme\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "Heartbits\\ContaoBackendTheme\\ContaoManager\\ContaoManagerPlugin"
   }
 }

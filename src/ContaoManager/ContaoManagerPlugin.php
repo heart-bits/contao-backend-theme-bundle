@@ -10,18 +10,18 @@
 
 namespace Heartbits\ContaoBackendTheme\ContaoManager;
 
-use Contao\CoreBundle\ContaoCoreBundle;
-use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
+use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Heartbits\ContaoBackendTheme\HeartbitsContaoBackendThemeBundle;
+use Contao\CoreBundle\ContaoCoreBundle;
 
 /**
  * Class Plugin.
  *
  * @package ContaoManager
  */
-class Plugin implements BundlePluginInterface
+class ContaoManagerPlugin implements BundlePluginInterface
 {
     /**
      * {@inheritdoc}

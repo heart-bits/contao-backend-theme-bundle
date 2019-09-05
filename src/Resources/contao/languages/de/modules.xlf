@@ -1,14 +1,74 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="plaintext" original="src/Resources/contao/languages/en/modules.xlf" source-language="en" target-language="de">
-    <body>
-      <trans-unit id="MOD.heartbits">
-        <source>heart-bits</source>
-        <target>heart-bits</target>
-      </trans-unit>
-      <trans-unit id="MOD.handbook">
-        <source>Video handbook</source>
-        <target>Video-Handbuch</target>
-      </trans-unit>
-    </body>
-  </file>
+    <file datatype="plaintext" original="src/Resources/contao/languages/en/modules.xlf" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="MOD.content">
+                <source>Content</source>
+                <target>Inhalte</target>
+            </trans-unit>
+            <trans-unit id="MOD.article.0">
+                <source>Articles</source>
+                <target>Abschnitte</target>
+            </trans-unit>
+            <trans-unit id="MOD.article.1">
+                <source>Manage articles and content elements</source>
+                <target>Abschnitte und Inhaltselemente verwalten</target>
+            </trans-unit>
+            <trans-unit id="MOD.form.0">
+                <source>Form generator</source>
+                <target>Formulare</target>
+            </trans-unit>
+            <trans-unit id="MOD.news.0">
+                <source>News</source>
+                <target>Blog</target>
+            </trans-unit>
+            <trans-unit id="MOD.news.1">
+                <source>Manage news and export them as RSS or Atom feed</source>
+                <target>Blog und Beiträge verwalten und als RSS- oder Atom-Feed exportieren</target>
+            </trans-unit>
+            <trans-unit id="MOD.tl_news_feed">
+                <source>News feeds</source>
+                <target>Blog-Feeds</target>
+            </trans-unit>
+            <trans-unit id="MOD.tl_news">
+                <source>Articles</source>
+                <target>Beiträge</target>
+            </trans-unit>
+            <trans-unit id="FMD.news">
+                <source>News</source>
+                <target>Blog</target>
+            </trans-unit>
+            <trans-unit id="FMD.newslist.0">
+                <source>Newslist</source>
+                <target>Blogliste</target>
+            </trans-unit>
+            <trans-unit id="FMD.newslist.1">
+                <source>Adds a list of news items to the page</source>
+                <target>Fügt der Seite eine Blogliste hinzu</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsreader.0">
+                <source>Newsreader</source>
+                <target>Blogleser</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsreader.1">
+                <source>Shows the details of a news item</source>
+                <target>Stellt einen einzelnen Blogbeitrag dar</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsarchive.0">
+                <source>News archive</source>
+                <target>Blogarchiv</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsarchive.1">
+                <source>Adds a news archive to the page</source>
+                <target>Fügt der Seite ein Blogarchiv hinzu</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsmenu.0">
+                <source>News archive menu</source>
+                <target>Blogarchiv-Menü</target>
+            </trans-unit>
+            <trans-unit id="FMD.newsmenu.1">
+                <source>Generates a navigation menu to browse the news archive</source>
+                <target>Erzeugt ein Menü zur Navigation des Blogarchivs</target>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
