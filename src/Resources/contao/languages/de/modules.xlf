@@ -69,6 +69,34 @@
                 <source>Generates a navigation menu to browse the news archive</source>
                 <target>Erzeugt ein Menü zur Navigation des Blogarchivs</target>
             </trans-unit>
+            <trans-unit id="MOD.member.0">
+                <source>Members</source>
+                <target>Frontend-Benutzer</target>
+            </trans-unit>
+            <trans-unit id="MOD.member.1">
+                <source>Manage member accounts (front end users)</source>
+                <target>Frontend-Benutzer verwalten</target>
+            </trans-unit>
+            <trans-unit id="MOD.mgroup.0">
+                <source>Member groups</source>
+                <target>Frontend-Gruppen</target>
+            </trans-unit>
+            <trans-unit id="MOD.mgroup.1">
+                <source>Manage member groups (front end user groups)</source>
+                <target>Frontend-Benutzergruppen verwalten</target>
+            </trans-unit>
+            <trans-unit id="MOD.user.0">
+                <source>Users</source>
+                <target>Backend-Benutzer</target>
+            </trans-unit>
+            <trans-unit id="MOD.user.1">
+                <source>Manage user accounts (back end users)</source>
+                <target>Backend-Benutzer verwalten</target>
+            </trans-unit>
+            <trans-unit id="MOD.group.0">
+                <source>User groups</source>
+                <target>Backend-Gruppen</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
