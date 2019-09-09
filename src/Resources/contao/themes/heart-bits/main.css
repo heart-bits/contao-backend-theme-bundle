@@ -184,6 +184,12 @@ body:not(.fullscreen) #header .inner {
 #tmenu .icon-logout {
 	background:url("icons/exit_dark.svg") 20px center no-repeat;
 }
+#tmenu .icon-link {
+	background:url("icons/link.svg") 20px center no-repeat;
+}
+#tmenu .icon-email {
+	background:url("icons/email.svg") 20px center no-repeat;
+}
 
 /* Container */
 #container {

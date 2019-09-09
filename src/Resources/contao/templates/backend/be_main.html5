@@ -57,7 +57,7 @@
                     <h2 class="toggleSubmenu"><?= $GLOBALS['TL_LANG']['heartbits']['need_help'] ?></h2>
                     <ul class="level_2">
                         <li class="info"><strong>heart-bits</strong> +49 2261 9158002</li>
-                        <li><a href="https://www.heart-bits.com/de/" class="icon-website"><?= $GLOBALS['TL_LANG']['heartbits']['website'] ?></a></li>
+                        <li><a href="https://www.heart-bits.com/de/" class="icon-link"><?= $GLOBALS['TL_LANG']['heartbits']['website'] ?></a></li>
                         <li><a href="mailto:hi@heart-bits.com" class="icon-email"><?= $GLOBALS['TL_LANG']['heartbits']['send_email'] ?></a></li>
                     </ul>
                 </li>
