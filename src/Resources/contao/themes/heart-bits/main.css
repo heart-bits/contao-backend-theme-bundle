@@ -34,8 +34,9 @@ body:not(.fullscreen) #header .inner {
 }
 #header h1 a {
 	display:block;
-	padding:12px 12px 12px 60px;
+	padding:12px 12px 12px 55px;
 	background:url("icons/logo.svg") no-repeat 10px center;
+	background-size: 35px;
 	font-weight:400;
 }
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
