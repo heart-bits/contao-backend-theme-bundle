@@ -1,5 +1,5 @@
 {
-  "name":"heart-bits/contao-heart-bits-backend-theme-bundle",
+  "name":"heart-bits/contao-backend-theme-bundle",
   "description":"heart-bits Backend Theme",
   "keywords":["contao", "bundle", "backend", "theme"],
   "type":"contao-bundle",
@@ -39,6 +39,6 @@
     ]
   },
   "extra": {
-    "contao-manager-plugin": "Heartbits\\ContaoBackendTheme\\ContaoManager\\ContaoManagerPlugin"
+    "contao-manager-plugin": "Heartbits\\ContaoBackendTheme\\ContaoManager\\Plugin"
   }
 }
