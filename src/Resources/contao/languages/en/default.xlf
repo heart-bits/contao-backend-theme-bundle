@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><xliff version="1.1">
+    <file datatype="plaintext" original="src/Resources/contao/languages/en/default.xlf" source-language="en" target-language="en">
+        <body>
+            <trans-unit id="heartbits.need_help">
+                <source>Need help?</source>
+                <target>Need help?</target>
+            </trans-unit>
+            <trans-unit id="heartbits.website">
+                <source>Website</source>
+                <target>Website</target>
+            </trans-unit>
+            <trans-unit id="heartbits.send_email">
+                <source>Send Email</source>
+                <target>Send Email</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
