@@ -1,11 +1,3 @@
-/*!
- * This file is part of Contao.
- *
- * (c) Leo Feyer
- *
- * @license LGPL-3.0-or-later
- */
-
 var Theme = {
 
 	/**
@@ -197,23 +189,28 @@ var Theme = {
 		var tmenu = $('tmenu');
 		if (!tmenu) return;
 
-		var li = tmenu.getElement('.submenu'),
-			span = li.getFirst('span');
-		if (!li || !span) return;
+		var li = tmenu.getElements('.submenu');
+		if (!li) return;
 
-		span.addEvent('click', function(e) {
-			if (li.hasClass('active')) {
-				li.removeClass('active');
-			} else {
-				li.addClass('active');
-			}
-			e.stopPropagation();
+		Array.prototype.forEach.call(li, function(el) {
+			var span = el.getFirst('span');
+			if (!span) return;
+			span.addEvent('click', function(e) {
+				if (el.hasClass('active')) {
+					el.removeClass('active');
+				} else {
+					el.addClass('active');
+				}
+				e.stopPropagation();
+			});
 		});
 
 		$(document.body).addEvent('click', function() {
-			if (li.hasClass('active')) {
-				li.removeClass('active');
-			}
+			Array.prototype.forEach.call(li, function(el) {
+				if (el.hasClass('active')) {
+					el.removeClass('active');
+				}
+			});
 		});
 	},
 

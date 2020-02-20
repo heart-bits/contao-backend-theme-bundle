@@ -21,7 +21,7 @@ body.popup {
 	text-align:left;
 }
 #header .inner {
-	background:#f47c00;
+	background:#2c333d;
 }
 body:not(.fullscreen) #header .inner {
 	max-width:1440px;
@@ -35,8 +35,9 @@ body:not(.fullscreen) #header .inner {
 }
 #header h1 a {
 	display:block;
-	padding:12px 12px 12px 43px;
+	padding:12px 12px 12px 55px;
 	background:url("icons/logo.svg") no-repeat 10px center;
+	background-size: 35px;
 	font-weight:400;
 }
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
@@ -102,7 +103,7 @@ body:not(.fullscreen) #header .inner {
 	transition:background-color .3s ease;
 }
 #tmenu a:hover,#tmenu a.hover,#tmenu li:hover .h2,#tmenu .active .h2,#tmenu .burger button:hover {
-	background-color:#e87600;
+	background-color:#E05A60;
 }
 #tmenu ul.menu_level_1 {
 	min-width:150px;
@@ -298,8 +299,8 @@ body:not(.fullscreen) #container {
 	border-left:4px solid #0f1c26;
 }
 #tl_navigation .menu_level_1 li.current {
-	background-color:#172b3b;
-	border-left-color:#f47c00;
+	background-color:#2c333d;
+	border-left-color:#E05A60;
 }
 #tl_navigation .menu_level_1 a {
 	display:block;
@@ -313,7 +314,7 @@ body:not(.fullscreen) #container {
 		font-weight:300;
 	}
 }
-#tl_navigation .tl_level_2 li:hover a {
+#tl_navigation .menu_level_1 li:hover a {
 	color:#fff;
 }
 #tl_navigation .collapsed .menu_level_1 {

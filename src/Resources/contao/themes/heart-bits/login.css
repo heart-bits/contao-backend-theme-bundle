@@ -8,7 +8,8 @@
 
 /* Body */
 body {
-	background:#eaeaec url("icons/contao.svg") center 4.5em no-repeat;
+	background:#2c333d url("icons/logo.svg") center 4.5em no-repeat;
+	background-size: 8em auto;
 }
 
 /* Container */
@@ -18,13 +19,14 @@ body {
 #main {
 	max-width:350px;
 	margin:0 auto;
-	background:#fff;
+	background:#1C2026;
 	border-radius:2px;
 }
 
 /* Headlines */
 #container h1 {
 	margin-bottom:1em;
+	color: #fff;
 }
 
 /* JS warning */
@@ -59,13 +61,19 @@ body {
 }
 .submit_container {
 	margin-top:12px;
-}
+}.submit_container button {
+	 color: #fff;
+	 background-color: #E05A60;
+	 border-radius: 50px;
+	 border-color: #2c333d;
+ }
 .submit_container a {
+	color: #fff;
 	float:right;
 	margin-top:8px;
 }
 .submit_container a:hover {
-	color:#006494;
+	color:#E05A60;
 }
 label[for="username"] {
 	position:absolute;
