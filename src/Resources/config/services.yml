@@ -1,5 +1,5 @@
 services:
-    Hartbits\EventListener\BackendMenuListener:
+    Heartbits\ContaoBackendTheme\EventListener\BackendMenuListener:
         arguments:
             - "@router"
             - "@request_stack"
