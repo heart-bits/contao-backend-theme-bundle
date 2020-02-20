@@ -120,6 +120,10 @@ body:not(.fullscreen) #header .inner {
 	visibility:hidden;
 	transition:opacity .3s ease, visibility .3s ease;
 }
+#tmenu .support ul.menu_level_1 {
+	left:6px;
+	right: auto;
+}
 #tmenu .active ul.menu_level_1 {
 	opacity:1;
 	visibility:visible;
@@ -161,6 +165,10 @@ body:not(.fullscreen) #header .inner {
 	border:7px solid transparent;
 	border-bottom-color:#fff;
 }
+#tmenu .support ul.menu_level_1:before {
+	left:9px;
+	right: auto;
+}
 #tmenu ul.menu_level_1:after {
 	content:"";
 	display:block;
@@ -186,6 +194,12 @@ body:not(.fullscreen) #header .inner {
 }
 #tmenu .icon-logout {
 	background:url("icons/exit_dark.svg") 20px center no-repeat;
+}
+#tmenu .icon-link {
+	background:url("icons/link.svg") 20px center no-repeat;
+}
+#tmenu .icon-email {
+	background:url("icons/email.svg") 20px center no-repeat;
 }
 
 /* Container */
@@ -2162,7 +2176,7 @@ fieldset.collapsed > legend {
 	#header h1 a {
 		width:22px;
 		padding:12px;
-		text-indent:34px; /* 22px width + 12px padding */
+		text-indent:-999px;
 		overflow:hidden;
 	}
 	#tmenu > li > a {
@@ -2192,6 +2206,16 @@ fieldset.collapsed > legend {
 		white-space:nowrap;
 		text-indent:28px; /* 16px width + 12px padding */
 		background:url("icons/profile.svg") center center no-repeat;
+		background-size:18px;
+	}
+	#tmenu .support .h2 {
+		width:16px;
+		margin:0 0 -2px;
+		padding-right:12px;
+		overflow:hidden;
+		white-space:nowrap;
+		text-indent:28px; /* 16px width + 12px padding */
+		background:url("icons/support.svg") center center no-repeat;
 		background-size:18px;
 	}
 	#main .content {
