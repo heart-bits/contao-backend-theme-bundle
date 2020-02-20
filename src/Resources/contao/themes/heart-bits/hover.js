@@ -197,28 +197,23 @@ var Theme = {
 		var tmenu = $('tmenu');
 		if (!tmenu) return;
 
-		var h2 = tmenu.getElements('h2.toggleSubmenu'),
-			li = tmenu.getElements('.submenu');
-		if (!h2 || !li) return;
+		var li = tmenu.getElement('.submenu'),
+			span = li.getFirst('span');
+		if (!li || !span) return;
 
-		Array.prototype.forEach.call(h2, function(el) {
-			var parent = el.getParent('.submenu');
-			el.addEvent('click', function(e) {
-				if (parent.hasClass('active')) {
-					parent.removeClass('active');
-				} else {
-					parent.addClass('active');
-				}
-				e.stopPropagation();
-			});
+		span.addEvent('click', function(e) {
+			if (li.hasClass('active')) {
+				li.removeClass('active');
+			} else {
+				li.addClass('active');
+			}
+			e.stopPropagation();
 		});
 
 		$(document.body).addEvent('click', function() {
-			Array.prototype.forEach.call(li, function(el) {
-				if (el.hasClass('active')) {
-					el.removeClass('active');
-				}
-			});
+			if (li.hasClass('active')) {
+				li.removeClass('active');
+			}
 		});
 	},
 

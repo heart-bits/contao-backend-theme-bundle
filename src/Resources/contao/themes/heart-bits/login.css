@@ -8,8 +8,7 @@
 
 /* Body */
 body {
-	background:#2c333d url("icons/logo.svg") center 4.5em no-repeat;
-	background-size: 8em auto;
+	background:#eaeaec url("icons/contao.svg") center 4.5em no-repeat;
 }
 
 /* Container */
@@ -19,14 +18,13 @@ body {
 #main {
 	max-width:350px;
 	margin:0 auto;
-	background:#1C2026;
+	background:#fff;
 	border-radius:2px;
 }
 
 /* Headlines */
 #container h1 {
 	margin-bottom:1em;
-	color: #fff;
 }
 
 /* JS warning */
@@ -53,22 +51,21 @@ body {
 .tl_text {
 	padding-right:24px;
 }
-.submit_container {
-	margin-top:9px;
+.widget-checkbox {
+	margin-top:6px;
 }
-.submit_container button {
-	color: #fff;
-	background-color: #E05A60;
-	border-radius: 50px;
-	border-color: #2c333d;
+.tl_checkbox + label {
+	margin-left:4px;
+}
+.submit_container {
+	margin-top:12px;
 }
 .submit_container a {
-	color: #fff;
 	float:right;
 	margin-top:8px;
 }
 .submit_container a:hover {
-	color:#E05A60;
+	color:#006494;
 }
 label[for="username"] {
 	position:absolute;
