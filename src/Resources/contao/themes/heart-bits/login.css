@@ -58,6 +58,7 @@ body {
 }
 .tl_checkbox + label {
 	margin-left:4px;
+	color:#fff;
 }
 .submit_container {
 	margin-top:12px;
