@@ -2,6 +2,7 @@
 
 namespace Heartbits\ContaoBackendTheme\EventListener;
 
+use Contao\BackendUser;
 use Contao\CoreBundle\Event\MenuEvent;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\RouterInterface;
@@ -20,6 +21,7 @@ class BackendMenuListener
 
     public function onBuild(MenuEvent $event): void
     {
+        $objUser = BackendUser::getInstance();
         $factory = $event->getFactory();
         $tree = $event->getTree();
 
@@ -65,6 +67,11 @@ class BackendMenuListener
 
         $support->addChild($email);
 
-        $tree->reorderChildren(['support', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
+        if ($objUser->isAdmin) {
+            $tree->reorderChildren(['support', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
+        } else {
+            $tree->reorderChildren(['support', 'alerts', 'preview', 'submenu', 'burger']);
+        }
+
     }
 }
