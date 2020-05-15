@@ -85,6 +85,7 @@ label[for="username"] {
 	width:16px;
 	height:16px;
 	text-indent:-999em;
+	z-index:1;
 }
 label[for="password"],label[for="confirm"] {
 	position:absolute;
@@ -95,6 +96,7 @@ label[for="password"],label[for="confirm"] {
 	width:14px;
 	height:14px;
 	text-indent:-999em;
+	z-index:1;
 }
 label[for="verify"] {
 	position:absolute;
@@ -105,6 +107,7 @@ label[for="verify"] {
 	width:16px;
 	height:16px;
 	text-indent:-999em;
+	z-index:1;
 }
 .qr_code {
 	margin:0 0 16px;
