@@ -258,7 +258,7 @@ fieldset.checkbox_container,fieldset.radio_container {
 	margin:3px 0;
 	box-sizing:border-box;
 	padding:5px 6px 6px;
-	border:1px solid #aaa;
+	border:1px solid #ceddde;
 	border-radius:2px;
 	background-color:#fff;
 	-moz-appearance:none;
@@ -439,19 +439,19 @@ select[multiple] {
 /* Submit buttons */
 .tl_submit {
 	padding:7px 12px;
-	border:1px solid #aaa;
+	border:1px solid #ceddde;
 	border-radius:2px;
 	box-sizing:border-box;
 	cursor:pointer;
-	background:#eee;
+	background:#e91c26;
 	transition:background .2s ease;
 }
 .tl_panel .tl_submit,.tl_version_panel .tl_submit,.tl_formbody_submit .tl_submit {
 	background:#fff;
 }
 .tl_submit:hover {
-	color:inherit;
-	background-color:#f6f6f6;
+	color:#e9fcfa;
+	background-color:#e91c26;
 }
 .tl_submit:active {
 	color:#aaa;

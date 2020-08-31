@@ -8,8 +8,8 @@
 
 /* Body */
 body {
-	background:#2c333d url("icons/logo.svg") center 4.5em no-repeat;
-	background-size: 8em auto;
+	background:#232230 url("icons/logo.svg") center 4.5em no-repeat;
+	background-size: 14em auto;
 }
 
 /* Container */
@@ -19,14 +19,14 @@ body {
 #main {
 	max-width:350px;
 	margin:0 auto;
-	background:#1C2026;
-	border-radius:2px;
+	background:#e9fcfa;
+	border-radius:3px;
 }
 
 /* Headlines */
 #container h1 {
 	margin-bottom:1em;
-	color: #fff;
+	color:#232230;
 }
 
 /* JS warning */
@@ -64,17 +64,17 @@ body {
 	margin-top:12px;
 }.submit_container button {
 	 color: #fff;
-	 background-color: #E05A60;
-	 border-radius: 50px;
-	 border-color: #2c333d;
+	 background-color: #e91c26;
+	 border-radius: 3px;
+	 border-color: #ceddde;
  }
 .submit_container a {
-	color: #fff;
+	color: #232230;
 	float:right;
 	margin-top:8px;
 }
 .submit_container a:hover {
-	color:#E05A60;
+	color:#e91c26;
 }
 label[for="username"] {
 	position:absolute;
