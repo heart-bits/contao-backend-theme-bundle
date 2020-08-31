@@ -8,5 +8,5 @@
  *
  */
 
-$GLOBALS['TL_DCA']['tl_user']['fields']['backendTheme']['sql'] = "varchar(32) NOT NULL default 'heart-bits'";
+$GLOBALS['TL_DCA']['tl_user']['fields']['backendTheme']['sql'] = "varchar(32) NOT NULL default 'saschawustmann'";
 $GLOBALS['TL_DCA']['tl_user']['fields']['fullscreen']['sql'] = "char(1) NOT NULL default '1'";
