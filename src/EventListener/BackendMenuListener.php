@@ -2,6 +2,7 @@
 
 namespace Heartbits\ContaoBackendTheme\EventListener;
 
+use Contao\System;
 use Contao\Backend;
 use Contao\BackendUser;
 use Contao\CoreBundle\Event\MenuEvent;
@@ -79,17 +80,29 @@ class BackendMenuListener
 
             $support->addChild($website);
 
-            $email = $factory
-                ->createItem('email')
-                ->setLabel($GLOBALS['TL_LANG']['heartbits']['send_email'])
-                ->setUri('mailto:hi@heart-bits.com')
-                ->setLinkAttribute('class', 'icon-email')
-                ->setExtra('safe_label', true)
-            ;
+            if ($theme === 'heart-bits') {
+                $email = $factory
+                    ->createItem('email')
+                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['send_email'])
+                    ->setUri('mailto:hi@heart-bits.com')
+                    ->setLinkAttribute('class', 'icon-email')
+                    ->setExtra('safe_label', true)
+                ;
+            } elseif ($theme === 'saschawustmann') {
+                $email = $factory
+                    ->createItem('email')
+                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['send_email'])
+                    ->setUri('mailto:hi@saschawustmann.com')
+                    ->setLinkAttribute('class', 'icon-email')
+                    ->setExtra('safe_label', true)
+                ;
+            }
 
             $support->addChild($email);
 
-            if ($objUser->isAdmin) {
+            if ($objUser->isAdmin && System::getContainer()->getParameter('kernel.environment') == 'dev') {
+                $tree->reorderChildren(['support', 'alerts', 'preview', 'submenu', 'burger']);
+            } elseif ($objUser->isAdmin) {
                 $tree->reorderChildren(['support', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
             } else {
                 $tree->reorderChildren(['support', 'alerts', 'preview', 'submenu', 'burger']);
