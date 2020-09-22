@@ -22,7 +22,6 @@ body.popup {
 }
 #header .inner {
 	background:#232230;
-	border-bottom:1px solid #41424e;
 }
 body:not(.fullscreen) #header .inner {
 	max-width:1440px;
@@ -36,9 +35,9 @@ body:not(.fullscreen) #header .inner {
 }
 #header h1 a {
 	display:block;
-	padding:12px 12px 12px 45px;
+	padding:12px 12px 12px 39px;
 	background:url("icons/favicon.svg") no-repeat 10px center;
-	background-size: 30px;
+	background-size: 20px;
 	font-weight:400;
 }
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
@@ -226,20 +225,19 @@ body:not(.fullscreen) #container {
 	float:left;
 	width:225px;
 	min-height:calc(100vh - 40px);
-	background:#232230;
+	background:#383943;
 	display:flex;
 	flex-direction:column;
 }
 #left .version {
-	margin-top:4em;
+	margin-top:2em;
 	padding:15px;
-	border-top:1px solid #3a454d;
 	font-size:.75rem;
 	line-height:1.4;
-	background:#172b3b;
+	background:#41424e;
 }
 #left .version,#left .version a {
-	color:#9fa4a8;
+	color:#ceddde;
 }
 
 /* Main */
@@ -247,7 +245,7 @@ body:not(.fullscreen) #container {
 	float:left;
 	width:calc(100% - 225px);
 	min-height:calc(100vh - 40px);
-	background:#eaeaec;
+	background:#e9fcfa;
 }
 .popup #main {
 	float:none;
@@ -280,7 +278,7 @@ body:not(.fullscreen) #container {
 	content:"";
 	width:calc(100% - 30px);
 	height:1px;
-	background:#3a454d;
+	background:#41424e;
 	display:block;
 	margin:15px auto;
 }
@@ -311,10 +309,9 @@ body:not(.fullscreen) #container {
 	padding:6px 0 0;
 }
 #tl_navigation .menu_level_1 li {
-	border-left:4px solid #0f1c26;
+	border-left:4px solid transparent;
 }
 #tl_navigation .menu_level_1 li.current {
-	background-color:#41424e;
 	border-left-color:#e91c26;
 }
 #tl_navigation .menu_level_1 a {
@@ -324,13 +321,16 @@ body:not(.fullscreen) #container {
 	color:#e9fcfa;
 	transition:color .2s ease;
 }
+#tl_navigation .menu_level_1 li.current a {
+	color:#e91c26;
+}
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
 	#tl_navigation .menu_level_1 a {
 		font-weight:300;
 	}
 }
 #tl_navigation .menu_level_1 li:hover a {
-	color:#fff;
+	color:#e91c26;
 }
 #tl_navigation .collapsed .menu_level_1 {
 	display:none;
