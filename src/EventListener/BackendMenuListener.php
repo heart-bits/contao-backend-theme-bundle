@@ -35,68 +35,39 @@ class BackendMenuListener
 
             $support = $factory
                 ->createItem('support')
-                ->setLabel($GLOBALS['TL_LANG']['heartbits']['need_help'])
+                ->setLabel($GLOBALS['TL_LANG'][$theme]['need_help'])
                 ->setAttribute('class', 'submenu support')
                 ->setLabelAttribute('class', 'h2')
             ;
 
             $tree->addChild($support);
 
-            if ($theme === 'heart-bits') {
-                $name = $factory
-                    ->createItem('info')
-                    ->setLabel('<strong>heart-bits' . $this->theme . '</strong>+49 2261 9158002')
-                    ->setAttribute('class', 'info')
-                    ->setExtra('safe_label', true)
-                ;
-            } elseif ($theme === 'saschawustmann') {
-                $name = $factory
-                    ->createItem('info')
-                    ->setLabel('<strong>Sascha Wustmann' . $this->theme . '</strong>+49 2261 9158002')
-                    ->setAttribute('class', 'info')
-                    ->setExtra('safe_label', true)
-                ;
-            }
+            $name = $factory
+                ->createItem('info')
+                ->setLabel('<strong>' . $GLOBALS['TL_LANG'][$theme]['title'] . '</strong>' . $GLOBALS['TL_LANG'][$theme]['phone'])
+                ->setAttribute('class', 'info')
+                ->setExtra('safe_label', true)
+            ;
 
             $support->addChild($name);
 
-            if ($theme === 'heart-bits') {
-                $website = $factory
-                    ->createItem('website')
-                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['website'])
-                    ->setUri('https://www.heart-bits.com/')
-                    ->setLinkAttribute('class', 'icon-link')
-                    ->setExtra('safe_label', true)
-                ;
-            } elseif ($theme === 'saschawustmann') {
-                $website = $factory
-                    ->createItem('website')
-                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['website'])
-                    ->setUri('https://www.saschawustmann.com/')
-                    ->setLinkAttribute('class', 'icon-link')
-                    ->setExtra('safe_label', true)
-                ;
-            }
+            $website = $factory
+                ->createItem('website')
+                ->setLabel($GLOBALS['TL_LANG'][$theme]['website'])
+                ->setUri($GLOBALS['TL_LANG'][$theme]['website_link'])
+                ->setLinkAttribute('class', 'icon-link')
+                ->setExtra('safe_label', true)
+            ;
 
             $support->addChild($website);
 
-            if ($theme === 'heart-bits') {
-                $email = $factory
-                    ->createItem('email')
-                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['send_email'])
-                    ->setUri('mailto:hi@heart-bits.com')
-                    ->setLinkAttribute('class', 'icon-email')
-                    ->setExtra('safe_label', true)
-                ;
-            } elseif ($theme === 'saschawustmann') {
-                $email = $factory
-                    ->createItem('email')
-                    ->setLabel($GLOBALS['TL_LANG']['heartbits']['send_email'])
-                    ->setUri('mailto:hi@saschawustmann.com')
-                    ->setLinkAttribute('class', 'icon-email')
-                    ->setExtra('safe_label', true)
-                ;
-            }
+            $email = $factory
+                ->createItem('email')
+                ->setLabel($GLOBALS['TL_LANG'][$theme]['send_email'])
+                ->setUri($GLOBALS['TL_LANG'][$theme]['email'])
+                ->setLinkAttribute('class', 'icon-email')
+                ->setExtra('safe_label', true)
+            ;
 
             $support->addChild($email);
 
