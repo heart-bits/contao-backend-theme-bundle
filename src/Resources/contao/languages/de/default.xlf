@@ -1,17 +1,70 @@
 <?xml version="1.0" ?><xliff version="1.1">
     <file datatype="plaintext" original="src/Resources/contao/languages/en/default.xlf" source-language="en" target-language="de">
         <body>
-            <trans-unit id="heartbits.need_help">
+            <trans-unit id="heart-bits.need_help">
                 <source>Need help?</source>
                 <target>Sie benötigen Hilfe?</target>
             </trans-unit>
-            <trans-unit id="heartbits.website">
+            <trans-unit id="heart-bits.website">
                 <source>Website</source>
                 <target>Webseite</target>
             </trans-unit>
-            <trans-unit id="heartbits.send_email">
+            <trans-unit id="heart-bits.website_link">
+                <source>https://www.heart-bits.com</source>
+                <target>https://www.heart-bits.com</target>
+            </trans-unit>
+            <trans-unit id="heart-bits.send_email">
                 <source>Send Email</source>
                 <target>E-Mail senden</target>
+            </trans-unit>
+            <trans-unit id="heart-bits.email">
+                <source>mailto:hi@heart-bits.com</source>
+                <target>mailto:hi@heart-bits.com</target>
+            </trans-unit>
+            <trans-unit id="heart-bits.title">
+                <source>heart-bits | Sascha Wustmann</source>
+                <target>heart-bits | Sascha Wustmann</target>
+            </trans-unit>
+            <trans-unit id="heart-bits.phone">
+                <source>+49 2261 9158002</source>
+                <target>+49 2261 9158002</target>
+            </trans-unit>
+            <trans-unit id="heart-bits.messages">
+                <source>Messages from heart-bits | Sascha Wustmann</source>
+                <target>Nachrichten von heart-bits | Sascha Wustmann</target>
+            </trans-unit>
+
+            <trans-unit id="saschawustmann.need_help">
+                <source>Need help?</source>
+                <target>Sie benötigen Hilfe?</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.title">
+                <source>Sascha Wustmann</source>
+                <target>Sascha Wustmann</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.phone">
+                <source>+49 2261 9158002</source>
+                <target>+49 2261 9158002</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.website">
+                <source>Website</source>
+                <target>Webseite</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.website_link">
+                <source>https://www.saschawustmann.com</source>
+                <target>https://www.saschawustmann.com</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.email">
+                <source>mailto:hi@saschawustmann.com</source>
+                <target>mailto:hi@saschawustmann.com</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.send_email">
+                <source>Send Email</source>
+                <target>E-Mail senden</target>
+            </trans-unit>
+            <trans-unit id="saschawustmann.messages">
+                <source>Messages from Sascha Wustmann</source>
+                <target>Nachrichten von Sascha Wustmann</target>
             </trans-unit>
         </body>
     </file>
