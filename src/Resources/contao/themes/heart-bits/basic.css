@@ -142,7 +142,7 @@ p {
 	height:0.1px;
 	line-height:0.1px;
 	font-size:0.1px;
-}min-width:1236px
+}
 .cf:before,.cf:after {
 	content:" ";
 	display:table;
@@ -578,6 +578,24 @@ a.tl_submit {
 /* Row highlighting */
 .hover-div:hover,.hover-row:hover td,.hover-div:hover .limit_toggler,.hover-row:hover .limit_toggler {
 	background-color:#fffce1 !important;
+}
+
+/* Badge */
+.badge-title {
+	float:right;
+	margin-left:8px;
+	margin-top:-8px;
+	border-radius:8px;
+	padding:2px 5px;
+	background:#E05A60;
+	color:#fff;
+	font-size:.75rem;
+	font-weight:600;
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
+	.badge-title {
+		font-weight:500;
+	}
 }
 
 /* Split button */
