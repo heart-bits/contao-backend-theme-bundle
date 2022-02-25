@@ -1,6 +1,6 @@
 
 <div id="tl_soverview">
-
+    <?php if (Contao\Backend::getTheme() === 'saschawustmann' || Contao\Backend::getTheme() === 'heart-bits'): ?>
     <?php $theme = Contao\Backend::getTheme();$fileURL = 'https://messages.' . $theme . '.com/vacation.php';$fileHeaders = get_headers($fileURL);if ($fileHeaders[0] !== 'HTTP/1.1 404 Not Found') {$fileIsAvailable = true;} if ($fileIsAvailable) {$stream = file_get_contents($fileURL);} ?>
     <?php if ($fileIsAvailable && $stream !== ''): ?>
         <?php $GLOBALS['TL_CSS'][] = 'bundles/heartbitscontaobackendtheme/backend.css'; ?>
@@ -8,6 +8,7 @@
             <h2><?= $GLOBALS['TL_LANG'][$theme]['messages'] ?></h2>
             <p><?= $stream ?></p>
         </div>
+    <?php endif; ?>
     <?php endif; ?>
 
     <div id="tl_messages">
