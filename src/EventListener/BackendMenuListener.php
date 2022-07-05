@@ -24,7 +24,7 @@ class BackendMenuListener
     public function onBuild(MenuEvent $event): void
     {
         $theme = Backend::getTheme();
-        if ($theme === 'heart-bits' || $theme === 'saschawustmann') {
+        if ($theme === 'saschawustmann') {
             $objUser = BackendUser::getInstance();
             $factory = $event->getFactory();
             $tree = $event->getTree();

@@ -52,7 +52,7 @@
         <div class="inner">
             <h1>
                 <a href="<?= $this->route('contao_backend') ?>" accesskey="h" id="home" title="<?= $this->home ?>">
-                    <span class="app-title"><?php if($this->theme === 'heart-bits'): ?>heart-bits<?php elseif($this->theme === 'saschawustmann'): ?>Sascha Wustmann<?php else: ?>Contao<?php endif; ?></span>
+                    <span class="app-title"><?php if($this->theme === 'saschawustmann'): ?>Sascha Wustmann<?php else: ?>Contao<?php endif; ?></span>
                     <?php if ($this->badgeTitle): ?>
                         <span class="badge-title"><?= $this->badgeTitle ?></span>
                     <?php endif; ?>
