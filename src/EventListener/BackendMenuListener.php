@@ -24,7 +24,7 @@ class BackendMenuListener
     public function onBuild(MenuEvent $event): void
     {
         $theme = Backend::getTheme();
-        if ($theme === 'heart-bits' || $theme === 'saschawustmann') {
+        if ($theme === 'saschawustmann') {
             $objUser = BackendUser::getInstance();
             $factory = $event->getFactory();
             $tree = $event->getTree();
@@ -35,9 +35,10 @@ class BackendMenuListener
 
             $support = $factory
                 ->createItem('support')
-                ->setLabel($GLOBALS['TL_LANG'][$theme]['need_help'])
-                ->setAttribute('class', 'submenu support')
-                ->setLabelAttribute('class', 'h2')
+                ->setLabel('<button type="button">'.$GLOBALS['TL_LANG'][$theme]['need_help'].'</button>')
+                ->setAttribute('class', 'submenu')
+                ->setExtra('safe_label', true)
+                ->setLabelAttribute('class', 'support')
             ;
 
             $tree->addChild($support);
@@ -56,6 +57,8 @@ class BackendMenuListener
                 ->setLabel($GLOBALS['TL_LANG'][$theme]['website'])
                 ->setUri($GLOBALS['TL_LANG'][$theme]['website_link'])
                 ->setLinkAttribute('class', 'icon-link')
+                ->setLinkAttribute('target', '_blank')
+                ->setLinkAttribute('rel', 'noreferrer noopener')
                 ->setExtra('safe_label', true)
             ;
 
@@ -72,11 +75,11 @@ class BackendMenuListener
             $support->addChild($email);
 
             if ($objUser->isAdmin && System::getContainer()->getParameter('kernel.environment') == 'dev') {
-                $tree->reorderChildren(['support', 'alerts', 'preview', 'submenu', 'burger']);
+                $tree->reorderChildren(['support', 'manual', 'alerts', 'preview', 'submenu', 'burger']);
             } elseif ($objUser->isAdmin) {
-                $tree->reorderChildren(['support', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
+                $tree->reorderChildren(['support', 'manual', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
             } else {
-                $tree->reorderChildren(['support', 'alerts', 'preview', 'submenu', 'burger']);
+                $tree->reorderChildren(['support', 'manual', 'alerts', 'preview', 'submenu', 'burger']);
             }
         }
     }
