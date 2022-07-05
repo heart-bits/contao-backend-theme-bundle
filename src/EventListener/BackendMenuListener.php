@@ -35,9 +35,10 @@ class BackendMenuListener
 
             $support = $factory
                 ->createItem('support')
-                ->setLabel($GLOBALS['TL_LANG'][$theme]['need_help'])
-                ->setAttribute('class', 'submenu support')
-                ->setLabelAttribute('class', 'h2')
+                ->setLabel('<button type="button">'.$GLOBALS['TL_LANG'][$theme]['need_help'].'</button>')
+                ->setAttribute('class', 'submenu')
+                ->setExtra('safe_label', true)
+                ->setLabelAttribute('class', 'support')
             ;
 
             $tree->addChild($support);
@@ -56,6 +57,8 @@ class BackendMenuListener
                 ->setLabel($GLOBALS['TL_LANG'][$theme]['website'])
                 ->setUri($GLOBALS['TL_LANG'][$theme]['website_link'])
                 ->setLinkAttribute('class', 'icon-link')
+                ->setLinkAttribute('target', '_blank')
+                ->setLinkAttribute('rel', 'noreferrer noopener')
                 ->setExtra('safe_label', true)
             ;
 
