@@ -18,7 +18,7 @@
 	},
   "require":{
     "php":">=7.1.0",
-    "contao/core-bundle": "^4.13.5"
+    "contao/core-bundle": "^4.13.12"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.0"

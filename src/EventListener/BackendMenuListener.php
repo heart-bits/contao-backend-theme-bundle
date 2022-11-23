@@ -74,13 +74,7 @@ class BackendMenuListener
 
             $support->addChild($email);
 
-            if ($objUser->isAdmin && System::getContainer()->getParameter('kernel.environment') == 'dev') {
-                $tree->reorderChildren(['support', 'manual', 'alerts', 'preview', 'submenu', 'burger']);
-            } elseif ($objUser->isAdmin) {
-                $tree->reorderChildren(['support', 'manual', 'alerts', 'debug', 'preview', 'submenu', 'burger']);
-            } else {
-                $tree->reorderChildren(['support', 'manual', 'alerts', 'preview', 'submenu', 'burger']);
-            }
+            $tree->reorderChildren(['support', 'manual', 'alerts', 'preview', 'submenu', 'burger']);
         }
     }
 }
